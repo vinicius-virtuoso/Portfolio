@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 img {
   display: block;
   width: 100%;
@@ -14,6 +15,22 @@ img {
 body {
   width: 100%;
   background-color: $black-dark;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+::-webkit-scrollbar-thumb {
+  background: $outher-dark;
+  border-radius: 30px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: $outher-light;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 0px;
+  box-shadow: inset 0px 0px 0px 0px transparent;
 }
 
 .border {

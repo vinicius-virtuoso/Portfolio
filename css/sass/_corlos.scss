@@ -10,13 +10,13 @@ $grey-normal: #4e4e50;
 $grey-dark: #3e3f40;
 $grey-light: #5d5e60;
 
-$outher-normal: #5526db;
-$outher-dark: #1c0068;
-$outher-light: #825bee;
-$outher-light-opacity: hsla(256, 81%, 65%, 0.6);
+$outher-normal: #dd1144;
+$outher-dark: #ac163b;
+$outher-light: #e73d68;
+$outher-light-opacity: #e73d6880;
 
-$linear-light: linear-gradient(180deg, #490eef 0%, #936dfc 100%);
-$linear-dark: linear-gradient(225deg, rgba(106, 58, 241, 0) 0%, #5526db 100%);
+$linear-light: linear-gradient(180deg, #ac163b 0%, #e73d68 100%);
+$linear-dark: linear-gradient(225deg, #ac163b 0%, #dd1144 100%);
 
 .grey-dark {
   color: $grey-dark;

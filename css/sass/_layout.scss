@@ -61,7 +61,7 @@
   position: relative;
 
   img {
-    max-width: 25.8rem;
+    width: 32rem;
     transition: all 0.2s ease-in;
     z-index: 2;
   }
@@ -78,6 +78,7 @@
   align-items: center;
   justify-content: center;
   z-index: -1;
+  opacity: 0.7;
 }
 .works {
   overflow: hidden;
@@ -121,6 +122,10 @@
 .get {
   height: 80vh;
   align-items: center;
+
+  h2 {
+    display: block;
+  }
 }
 .get-box {
   height: 100%;

@@ -3,12 +3,12 @@
 <path d="M60.1984 1.48928L78.6705 19.8197L41.3236 67.1284L41.2446 25.4988L60.1984 1.48928Z" fill="url(#paint2_linear_6_30)" stroke="url(#paint3_linear_6_30)" stroke-width="2"/>
 <defs>
 <linearGradient id="paint0_linear_6_30" x1="59.0545" y1="50.3546" x2="12.3737" y2="63.715" gradientUnits="userSpaceOnUse">
-<stop stop-color="#6A3AF1"/>
+<stop stop-color="#dd1144"/>
 <stop offset="1" stop-color="#181327"/>
 </linearGradient>
 <linearGradient id="paint1_linear_6_30" x1="59.0545" y1="50.3546" x2="12.3737" y2="63.715" gradientUnits="userSpaceOnUse">
-<stop stop-color="#431AB6"/>
-<stop offset="1" stop-color="#B49CF5"/>
+<stop stop-color="#ac163b"/>
+<stop offset="1" stop-color="#e73d6880"/>
 </linearGradient>
 <linearGradient id="paint2_linear_6_30" x1="20.495" y1="50.1795" x2="67.6613" y2="63.4834" gradientUnits="userSpaceOnUse">
 <stop stop-color="#7B8393"/>
