@@ -105,6 +105,7 @@ a {
   background: #825bee;
   background: -webkit-gradient(linear, left top, left bottom, from(#5526db), to(#825bee));
   background: linear-gradient(180deg, #5526db 0%, #825bee 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

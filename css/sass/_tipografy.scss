@@ -79,6 +79,7 @@ a {
 .mask {
   background: $outher-light;
   background: linear-gradient(180deg, $outher-normal 0%, $outher-light 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
