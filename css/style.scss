@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+@import "sass/_corlos.scss";
+@import "sass/_tipografy.scss";
+
+body {
+  width: 100%;
+  background-color: $black-dark;
+}
+
+.border {
+  border: 1px solid red;
+}
+
+@import "sass/_spancing.scss";
+@import "sass/_layout.scss";
