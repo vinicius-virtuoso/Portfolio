@@ -30,6 +30,10 @@
 
 .container-item:nth-child(1) {
   flex-grow: 3;
+
+  .box-text {
+    max-width: 590px;
+  }
 }
 .container-item:nth-child(2) {
   flex-grow: 1;
@@ -40,7 +44,11 @@
   margin: 2.5rem 0;
 
   img {
-    max-width: 21.8rem;
+    max-width: 25.8rem;
+    transition: all 0.2s ease-in;
+    &:hover {
+      box-shadow: 20px -20px $black-dark, 40px -40px $outher-light;
+    }
   }
 }
 

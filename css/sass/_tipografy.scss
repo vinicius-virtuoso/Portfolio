@@ -85,25 +85,30 @@ a {
 }
 
 .square {
-  display: inline-block;
+  display: flex;
   font-size: 1.5rem;
   padding: 1rem 1.5rem;
   margin-top: 3rem;
   position: relative;
   transition: 0.4s ease-in;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  max-width: 130px;
+  margin: 70px auto;
 
   &::after {
     content: "";
     display: block;
-    width: 120px;
-    height: 100px;
+    width: 130%;
+    height: 165px;
     background-image: url("/img/svg/polygon.svg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     top: 30%;
     left: 50%;
-    transform: translate(-50%, -20%);
+    transform: translate(-50%, -30%);
     position: absolute;
     z-index: -1;
   }
@@ -154,8 +159,8 @@ a {
 
   .square {
     &::after {
-      width: 95px;
-      height: 75px;
+      width: 100px;
+      height: 120px;
     }
   }
 }
