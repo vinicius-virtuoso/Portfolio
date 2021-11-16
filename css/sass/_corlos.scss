@@ -17,3 +17,13 @@ $outher-light-opacity: hsla(256, 81%, 65%, 0.6);
 
 $linear-light: linear-gradient(180deg, #490eef 0%, #936dfc 100%);
 $linear-dark: linear-gradient(225deg, rgba(106, 58, 241, 0) 0%, #5526db 100%);
+
+.grey-dark {
+  color: $grey-dark;
+}
+.grey-normal {
+  color: $grey-normal;
+}
+.grey-light {
+  color: $grey-light;
+}

@@ -1,0 +1,85 @@
+// _tipografy
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 4.5rem;
+  }
+  h2 {
+    font-size: 3.5rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+  h4 {
+    font-size: 2rem;
+  }
+  h5 {
+    font-size: 1.5rem;
+  }
+  h6 {
+    font-size: 1.125rem;
+  }
+}
+@media screen and (max-width: 760px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  h5 {
+    font-size: 0.75rem;
+  }
+  h6 {
+    font-size: 0.625rem;
+  }
+
+  .square {
+    &::after {
+      width: 100px;
+      height: 120px;
+    }
+  }
+}
+// END _tipografy
+// _layout
+@media screen and (max-width: 1024px) {
+  .menu-left,
+  .menu-right {
+    display: none;
+  }
+  .container-item:nth-child(2) {
+    img {
+      max-width: 21.5rem;
+    }
+  }
+  .svg-hero {
+    transform: scale(1.5) rotate(25deg);
+  }
+  .bg-works {
+    transform: scale(1.5) rotate(253deg);
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .hero {
+    height: auto;
+  }
+  .svg-hero {
+    transform: scale(2) rotate(25deg);
+  }
+  .container {
+    flex-direction: column;
+  }
+  .container-item:nth-child(2) {
+    img {
+      max-width: 14.5rem;
+    }
+  }
+}
+// END _layout
