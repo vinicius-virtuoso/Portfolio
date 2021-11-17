@@ -38,45 +38,47 @@
   h6 {
     font-size: 0.625rem;
   }
-
-  .square {
-    &::after {
-      width: 100px;
-      height: 120px;
-    }
-  }
 }
 // END _tipografy
 // _layout
 @media screen and (max-width: 1024px) {
-  .menu-left,
-  .menu-right {
-    display: none;
-  }
   .container-item:nth-child(2) {
     img {
       max-width: 21.5rem;
     }
   }
   .svg-hero {
-    transform: scale(1.5) rotate(25deg);
+    transform: scale(2);
   }
   .bg-works {
-    transform: scale(1.5) rotate(253deg);
+    transform: scale(1.5);
   }
 }
 
 @media screen and (max-width: 760px) {
+  .menu-left,
+  .menu-right {
+    display: none;
+  }
+  .menu {
+    justify-content: center;
+  }
   .hero {
     height: auto;
   }
   .svg-hero {
-    transform: scale(2) rotate(25deg);
+    transform: scale(3);
   }
   .container {
     flex-direction: column;
   }
+  .container-item:nth-child(1) {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+  }
   .container-item:nth-child(2) {
+    display: none;
     img {
       max-width: 14.5rem;
     }

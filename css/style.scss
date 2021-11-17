@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 img {
@@ -15,6 +16,8 @@ img {
 body {
   width: 100%;
   background-color: $black-dark;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {

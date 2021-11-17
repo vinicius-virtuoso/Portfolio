@@ -14,7 +14,6 @@ a {
 .link {
   padding: 0.5rem 1.5rem;
   font-size: 1.5rem;
-  transition: 0.5s ease-out;
   position: relative;
   display: inline-block;
 
@@ -28,11 +27,10 @@ a {
     height: 4px;
     background: $white-normal;
     transform: translateX(-50%);
-    transition: all 0.5s ease-in;
     opacity: 0;
+    transition: 0.5s ease-out;
   }
   &:hover {
-    transition: 0.5s ease-out;
     opacity: 0.8;
 
     &::after {
