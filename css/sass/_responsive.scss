@@ -63,6 +63,12 @@
   .menu {
     justify-content: center;
   }
+
+  h2.title-h2::before {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
   .hero {
     height: 100vh;
   }
@@ -81,6 +87,46 @@
     display: none;
     img {
       max-width: 14.5rem;
+    }
+  }
+  .list-item .img-project {
+    max-width: 200px;
+    height: 150px;
+  }
+  .about .box-about {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .about .box-about .box-item:nth-child(1) {
+    height: 100%;
+    margin: 1rem 0rem;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .about .box-about .box-item:nth-child(2) {
+    flex-grow: 1;
+    height: 90%;
+    overflow: hidden;
+    margin: 1rem 0rem;
+    max-width: 100%;
+    img {
+      object-fit: contain;
+      max-width: 100%;
+      max-height: 300px;
+    }
+  }
+  .about .box-about .skills-list {
+    width: 100%;
+
+    li {
+      margin: 0 0.5rem;
+      width: 50%;
+      font-size: 1rem;
     }
   }
 }

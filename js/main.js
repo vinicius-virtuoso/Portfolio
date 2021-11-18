@@ -103,7 +103,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   gsap.registerPlugin(ScrollTrigger);
-
+  gsap.from("#about *", {
+    duration: .5,
+    y: 350,
+    opacity: 0,
+    stagger: { each: 0.2 },
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: "#about",
+    }
+  });
   gsap.from("#my-works div", {
     duration: 1,
     y: 350,
