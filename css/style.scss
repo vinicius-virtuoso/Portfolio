@@ -19,6 +19,9 @@ body {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+.overflow {
+  overflow: hidden;
+}
 
 ::-webkit-scrollbar {
   width: 0.4rem;

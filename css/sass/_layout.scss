@@ -15,7 +15,7 @@
     rgba(0, 0, 0, 0.781) 37%,
     rgb(0, 0, 0) 63%
   );
-  z-index: 9999;
+  z-index: 999;
 }
 .menu-left,
 .menu-right {
@@ -24,6 +24,94 @@
 .menu-logo {
   width: 4.3rem;
   height: 4.3rem;
+}
+.menu-mobile {
+  display: none;
+}
+.menu-mobile .btn-mobile {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.3rem;
+  padding: 5px;
+  background: rgba(36, 36, 36, 0.705);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  position: relative;
+
+  span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: $white-normal;
+    border-radius: 4px;
+    transition: 0.4s ease-in-out;
+  }
+  span:nth-child(2) {
+    margin: 8px 0;
+  }
+}
+.btn-mobile.active {
+  span:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 6px);
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  span:nth-child(2) {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+  span:nth-child(3) {
+    transform: rotate(-45deg) translate(8px, -7px);
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+}
+.menu-mobile-links {
+  width: 0;
+  height: 0;
+  position: fixed;
+  bottom: 0px;
+  left: 50%;
+  overflow: hidden;
+  visibility: hidden;
+  transition: all 0.4s ease-in-out;
+  opacity: 0;
+  font-size: 0;
+}
+.menu-mobile-links.open {
+  display: block;
+  visibility: visible;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  overflow: hidden;
+  background: hsl(0, 0%, 3%);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: all 0.4s ease-in-out;
+
+  list-style: none;
+  li {
+    display: block;
+    width: 100%;
+    text-align: center;
+    a {
+      display: inline-block;
+      width: 100%;
+      padding: 2rem 0;
+      font-size: 1.5rem;
+    }
+  }
 }
 
 .relative {
@@ -288,7 +376,7 @@ section.screen-loading {
   }
 }
 .get {
-  height: 100vh;
+  height: calc(100vh - 95px);
   overflow: hidden;
 
   h2 {
@@ -340,11 +428,30 @@ section.screen-loading {
   justify-content: center;
   left: 50%;
   transform: translateX(-50%);
-  width: 100%;
   .svg-works {
-    width: 100%;
     height: 100vh;
     transform: scale(1.2);
+  }
+}
+
+.footer {
+  width: 100%;
+  height: 95px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+  border-top: 2px solid $outher-light-opacity-2;
+  background: #000;
+  img {
+    width: 100%;
+    max-width: 60px;
+    margin-bottom: 0.5rem;
+  }
+  small {
+    color: $white-dark;
+    letter-spacing: 1px;
   }
 }
 
