@@ -13,11 +13,12 @@ export default function initHeader() {
   });
   btnMenu.addEventListener("click", () => {
     btnMenu.classList.toggle("active");
-    body.classList.add("overflow");
     if (btnMenu.classList.contains("active")) {
       navMenu.classList.add("open");
+      body.classList.add("overflow");
     } else {
       navMenu.classList.remove("open");
+      body.classList.remove("overflow");
     }
   });
   menuLinksDesk.forEach((link) => {
