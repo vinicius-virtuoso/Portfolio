@@ -237,7 +237,7 @@ body {
   background-color: #050607;
   scroll-behavior: smooth;
   overflow-x: hidden;
-  background-image: url("../../img/svg/bg-hero.svg");
+  background-image: url("./../img/svg/bg-hero.svg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
