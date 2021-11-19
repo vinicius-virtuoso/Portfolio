@@ -196,6 +196,11 @@ section.screen-loading {
 }
 .hero {
   height: 100vh;
+
+  .container {
+    height: 100%;
+    align-items: center;
+  }
 }
 
 .container-item:nth-child(1) {
@@ -431,90 +436,5 @@ section.screen-loading {
   small {
     color: $white-dark;
     letter-spacing: 1px;
-  }
-}
-
-#square1 {
-  transform-origin: center center;
-  transform-box: fill-box;
-  animation: updown 6s infinite;
-}
-#square2 {
-  transform-origin: center center;
-  transform-box: fill-box;
-  animation: updown 6s 1s infinite;
-}
-#square3 {
-  transform-origin: center center;
-  transform-box: fill-box;
-  animation: updown 6s 2.5s infinite;
-}
-#square4 {
-  transform-origin: center center;
-  transform-box: fill-box;
-  animation: updown 2s 0.5s infinite;
-}
-#square5 {
-  transform-origin: center center;
-  transform-box: fill-box;
-  animation: updown 6s 3.5s infinite;
-}
-#square6 {
-  transform-origin: center center;
-  transform-box: fill-box;
-  animation: updown 6s 1.5s infinite;
-}
-#square7 {
-  transform-origin: center center;
-  transform-box: fill-box;
-  animation: updown 6s 5s infinite;
-}
-#square7 {
-  transform-origin: center center;
-  transform-box: fill-box;
-  animation: updown 3s 0.3s infinite;
-}
-#line1 {
-  transform-origin: center center;
-  transform-box: fill-box;
-  animation: lineDown 3s 0.3s infinite;
-}
-#line2 {
-  transform-origin: center center;
-  transform-box: fill-box;
-  animation: lineRight 3s 0.3s infinite;
-}
-#line3 {
-  transform-origin: center center;
-  transform-box: fill-box;
-  animation: lineDown 3s 0.8s infinite;
-}
-#line4 {
-  transform-origin: center center;
-  transform-box: fill-box;
-  animation: lineDown 3s 1s infinite;
-}
-@keyframes updown {
-  from {
-    transform: translate3d(0, 3000px, 0) rotate(0deg);
-  }
-  to {
-    transform: translate3d(0, -1000px, 0) rotate(360deg);
-  }
-}
-@keyframes lineDown {
-  from {
-    transform: translate3d(0, -1000px, 0);
-  }
-  to {
-    transform: translate3d(0, 3000px, 0);
-  }
-}
-@keyframes lineRight {
-  from {
-    transform: translate3d(-1000px, 0, 0);
-  }
-  to {
-    transform: translate3d(3000px, 0, 0);
   }
 }
