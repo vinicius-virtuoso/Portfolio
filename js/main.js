@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .from(
       ".box-text .text-1",
       {
-        duration: 1.5,
+        duration: 1,
         opacity: 0,
         x: -250,
         stagger: { each: 0.3 },
@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .from(
       ".box-text .text-2",
       {
-        duration: 1.5,
+        duration: 1,
         opacity: 0,
         x: 250,
         stagger: { each: 0.3 },
@@ -158,7 +158,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .from(
       ".container-item img",
       {
-        duration: 2,
+        duration: 1,
         opacity: 0,
         y: 250,
         ease: "power3.out",
@@ -168,10 +168,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   gsap.registerPlugin(ScrollTrigger);
   gsap.from(".box-anime *", {
-    duration: 0.5,
-    y: 350,
+    duration: 0.3,
+    y: 250,
     opacity: 0,
-    stagger: { each: 0.2 },
+    stagger: { each: 0.1 },
     ease: "power3.out",
     scrollTrigger: {
       trigger: "#about",
@@ -180,10 +180,10 @@ document.addEventListener("DOMContentLoaded", () => {
   gsap.from(
     "#my-works div",
     {
-      duration: 1,
-      y: 350,
+      duration: 0.5,
+      y: 250,
       opacity: 0,
-      stagger: { each: 0.4 },
+      stagger: { each: 0.2 },
       ease: "power3.out",
       scrollTrigger: {
         trigger: "#my-works",
@@ -192,30 +192,30 @@ document.addEventListener("DOMContentLoaded", () => {
     "-=0.8"
   );
   gsap.from("#getintouch h2", {
-    duration: 1,
-    y: 350,
+    duration: 0.5,
+    y: 250,
     opacity: 0,
-    stagger: { each: 0.3 },
+    stagger: { each: 0.2 },
     ease: "power3.out",
     scrollTrigger: {
       trigger: "#getintouch",
     },
   });
   gsap.from("#getintouch h3", {
-    duration: 1,
+    duration: 0.5,
     y: 250,
     opacity: 0,
-    stagger: { each: 0.3 },
+    stagger: { each: 0.2 },
     ease: "power3.out",
     scrollTrigger: {
       trigger: "#getintouch h3",
     },
   });
   gsap.from(".social *", {
-    duration: 1,
+    duration: 0.5,
     y: 250,
     opacity: 0,
-    stagger: { each: 0.3 },
+    stagger: { each: 0.2 },
     ease: "power3.out",
     scrollTrigger: {
       trigger: "#getintouch",
